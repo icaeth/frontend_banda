@@ -374,6 +374,7 @@ footer {
   font-variant: small-caps;
   color: #f6e200;
   text-align: center;
+  padding: 20px;
 }
 
 .tienda .destacados {
@@ -418,25 +419,44 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .productos aside {
   background-color: #000000;
   color: #f6e200;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
 }
 
 .productos .galeriaproductos {
   background-color: #000000;
   color: #f6e200;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 250px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .productos .galeriaproductos ul {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .productos .galeriaproductos ul li {
   list-style-type: none;
+  width: 200px;
+  padding: 10px;
 }
 
 .productos .galeriaproductos ul img {

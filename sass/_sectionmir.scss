@@ -13,6 +13,7 @@
         font-variant: small-caps;
         color: $clr_yellow;
         text-align: center;
+        padding: 20px;
     }
 
     .destacados {
@@ -49,23 +50,32 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    flex: 1;
 
     aside {
         background-color: $clr_black;
         color: $clr_yellow;
-
-
+        flex: 0 0 200px;
     }
 
     .galeriaproductos {
         background-color: $clr_black;
         color: $clr_yellow;
 
-        ul {
-            align-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 250px;
+        flex-flow: row wrap;
 
-            li {
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+             li {
                 list-style-type: none;
+                width: 200px;
+                padding: 10px;
+                
             }
 
             img {
