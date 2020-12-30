@@ -83,3 +83,41 @@
     }
   }
 }
+footer {
+  background-color: $clr-yellow;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contenedor-musica {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contenedor-rSocial {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    .titulo {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
