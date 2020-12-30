@@ -343,145 +343,56 @@ template {
 
 header {
   background-color: #f6e200;
-  height: 35vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: Arial;
-}
-
-header .logo-imagen {
-  width: 100%;
-  height: 100%;
-}
-
-header .contenedor-bannerC {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2%;
-}
-
-header .contenedor-bannerI a:link {
-  width: 100%;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2%;
-  color: black;
-}
-
-header .contenedor-bannerD a:link {
-  width: 100%;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2%;
-  color: black;
+  height: 30vh;
 }
 
 footer {
-  background-color: lightblue;
-  height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: Arial;
+  background-color: #f6e200;
 }
 
-footer .appMusica {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+footer img {
+  width: 50px;
+  height: 50px;
 }
 
 footer .contenedor-musica {
-  width: 80%;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2%;
-}
-
-footer .contenedor-musica .musica {
-  width: 15%;
-}
-
-footer .rSocial {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 footer .contenedor-rSocial {
-  width: 80%;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-footer .contenedor-rSocial .rSocial {
-  width: 15%;
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  place-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+footer .container .titulo {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */
