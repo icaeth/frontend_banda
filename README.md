@@ -1,4 +1,4 @@
-## frontend_banda
+## frontend_banda :octocat: 
 Página para Tarea curso frontend
 
 Integrantes: Carlos, Cristian, Marcelo, Miranda, Sergio
