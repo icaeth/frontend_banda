@@ -1,0 +1,113 @@
+body{
+    background-color: $clr-black;
+    a, a:link, a:visited {
+        text-decoration: none;
+        color:$clr-yellow;
+        
+    }
+}
+.gallery
+{
+    background-color: $clr-black;
+    color: $clr-yellow;
+    margin:0;
+    
+    
+    .flexcontainer
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 99%;
+        align-items: center;
+
+        .gcard
+        {
+            
+            flex: 0 1 auto ;
+            padding: 0.5rem;
+            
+            
+            img 
+            {
+              height: auto;
+              width: 99%;
+              
+            }
+        }
+    }
+
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $clr-yellow;
+    }
+
+.breadcrumb {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $clr-yellow;
+    background-color: $clr-black;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 768px) {   
+    .gallery {
+        
+        
+        .flexcontainer
+        {
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+    
+            .gcard
+            {
+                flex: 0 1 auto ;
+                width: 48%;
+                img 
+                {
+                  height: auto;
+                  width: 100%;
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .gallery {
+        
+        
+        .flexcontainer
+        {
+            flex-flow: row wrap;
+            
+    
+            .gcard
+            {
+                flex: 0 1 auto ;
+                width: 30%;
+                img 
+                {                  
+                  height: auto;
+                  width: 100%;
+                  transition: transform .3s;
+                  
+                }
+                img:hover{
+                transform:scale(1.8);
+                opacity: 100%;
+                z-index: -1;
+                }
+            }
+        }
+
+    }
+
+}
