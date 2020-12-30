@@ -1,32 +1,41 @@
-*{
+* {
     font-family: Lato;
 }
-.tienda{
+
+.tienda {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     background-color: $clr_black;
-    h1{
+
+    h1 {
         font-weight: bold;
         font-variant: small-caps;
         color: $clr_yellow;
         text-align: center;
     }
+
     .destacados {
-            background-color: $clr_yellow;
+        background-color: $clr_yellow;
+
         h2 {
             font-weight: bold;
             font-variant: small-caps;
+            //acá centramos el título
+            text-align: center;
         }
+
         .slider {
-            width: 300px;
-            height: 300px;
+            //acá aplicamos un width de 90vw
+            width: 90vw;
+            height: auto;
             display: flex;
             overflow-x: auto;
-            
-            scroll-snap-type: x mandatory; 
+            justify-self: center;
+            scroll-snap-type: x mandatory;
         }
-        .foto > div {
+
+        .foto>div {
             width: 300px;
             flex-shrink: 0;
             height: 100%;
@@ -35,50 +44,57 @@
         }
     }
 }
+
 .productos {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 
-aside{
-    background-color: $clr_black;
-    color: $clr_yellow;
-    
-       
-}  
-.galeriaproductos{
-    background-color: $clr_black;
-    color: $clr_yellow;
-    
-    ul{
-        align-content: center;
-        li{
-            list-style-type: none;
-        }
-        img{
-            height: 200px;
-        }
-        .nombreproducto{
-            font-weight: bold;
-        }
-        button{
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            font-variant: small-caps;
-            background-color: $clr_yellow;
-            color: $clr_black;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color: $clr_black;
-            color: $clr_yellow;
+    aside {
+        background-color: $clr_black;
+        color: $clr_yellow;
 
+
+    }
+
+    .galeriaproductos {
+        background-color: $clr_black;
+        color: $clr_yellow;
+
+        ul {
+            align-content: center;
+
+            li {
+                list-style-type: none;
+            }
+
+            img {
+                height: 200px;
+            }
+
+            .nombreproducto {
+                font-weight: bold;
+            }
+
+            button {
+                border: none;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                font-variant: small-caps;
+                background-color: $clr_yellow;
+                color: $clr_black;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: $clr_black;
+                color: $clr_yellow;
+
+            }
         }
     }
-}
 }
