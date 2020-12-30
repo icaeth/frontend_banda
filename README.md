@@ -9,19 +9,29 @@ Integrantes: Carlos, Cristian, Marcelo, Miranda, Sergio
 
 Nota: Todas las secciones comparten Header y Footer, por lo que se agruparán como secciones.
 
-Header - Marcelo - Nivel de avance:
+Header 
+- Marcelo 
+- Nivel de avance:
 Disponible para Merge 
 
-Footer - Marcelo - Nivel de avance:
+Footer 
+- Marcelo 
+- Nivel de avance:
 Disponible para Merge 
 
-Home - Varios - Nivel de avance:
+Home 
+- Varios 
+- Nivel de avance:
 Disponible para Merge
 
-Home/Videos - Cristian - Nivel de avance: 100%
-Disponible para Merge [x]
+Home/Videos 
+- Cristian 
+- Nivel de avance: 100%
+- [x] Disponible para Merge 
 
-Home/Próximos Conciertos - Sergio - Nivel de avance: 
+Home/Próximos Conciertos 
+- Sergio 
+- Nivel de avance: 
 Disponible para Merge
 
 Home/Merchadising - Miranda - Nivel de avance:
@@ -39,8 +49,20 @@ Disponible para Merge
 Próximos Conciertos - Sergio - Nivel de avance:
 Disponible para Merge 
 
-Biografía - Cristian - Nivel de avance: 100%
-Disponible para Merge [x]
-
-Discografía - Cristian - Nivel de avance: 100%
+Biografía 
+- Cristian 
+- Nivel de avance: 100%
 - [x] Disponible para Merge 
+
+Discografía 
+- Cristian
+- Nivel de avance: 100%
+- [x] Disponible para Merge 
+
+
+# Secciones
+
+Agregados por Cristian
+
+/img/
+Carátulas de discos
