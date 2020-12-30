@@ -70,7 +70,7 @@ Discografía
 - :heavy_check_mark: Disponible para Merge 
 
 
-# Secciones
+# Assets
 
 Agregados por Cristian
 
