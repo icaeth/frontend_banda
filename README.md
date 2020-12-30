@@ -27,7 +27,7 @@ Home
 Home/Videos 
 - Cristian 
 - Nivel de avance: 100%
-:heavy_check_mark: Disponible para Merge 
+- :heavy_check_mark: Disponible para Merge 
 
 Home/Próximos Conciertos 
 - Sergio 
@@ -62,12 +62,12 @@ Próximos Conciertos
 Biografía 
 - Cristian 
 - Nivel de avance: 100%
-:heavy_check_mark: Disponible para Merge 
+- :heavy_check_mark: Disponible para Merge 
 
 Discografía 
 - Cristian
 - Nivel de avance: 100%
-:heavy_check_mark: Disponible para Merge 
+- :heavy_check_mark: Disponible para Merge 
 
 
 # Secciones
