@@ -341,41 +341,72 @@ template {
   display: none;
 }
 
-header {
+.banner {
   background-color: #f6e200;
-  height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Arial;
+  padding: 1em;
 }
 
-header .logo-imagen {
-  width: 100%;
-  height: 100%;
+@media screen and (min-width: 768px) {
+  .banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-header .contenedor-bannerC {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2%;
-}
-
-header .contenedor-bannerI a:link {
-  width: 100%;
+.banner a {
   text-decoration: none;
+  background-color: #000000;
+  color: #f6e200;
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .banner a {
+    margin-bottom: 1em;
+    background-color: #f6e200;
+    color: #000000;
+    text-align: center;
+  }
+}
+
+.banner a:hover {
+  background-color: #f6e200;
+  color: #000000;
+  -webkit-box-shadow: 0 0 0 2px #000000;
+          box-shadow: 0 0 0 2px #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .banner a:hover {
+    background-color: #000000;
+    color: #f6e200;
+  }
+}
+
+.banner .logo-imagen {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+.banner .contenedor-bannerI {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,16 +414,26 @@ header .contenedor-bannerI a:link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2%;
-  color: black;
 }
 
-header .contenedor-bannerD a:link {
-  width: 100%;
-  text-decoration: none;
+@media screen and (min-width: 768px) {
+  .banner .contenedor-bannerI {
+    width: 250px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .banner .contenedor-bannerI .link2 {
+    margin-right: auto;
+    width: auto;
+  }
+  .banner .contenedor-bannerI .link1,
+  .banner .contenedor-bannerI .link3 {
+    margin-left: 4em;
+  }
+}
+
+.banner .contenedor-bannerD {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,88 +441,30 @@ header .contenedor-bannerD a:link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2%;
-  color: black;
 }
 
-footer {
-  background-color: lightblue;
-  height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: Arial;
+@media screen and (min-width: 768px) {
+  .banner .contenedor-bannerD {
+    width: 250px;
+    text-align: right;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .banner .contenedor-bannerD .link5 {
+    margin-left: auto;
+  }
+  .banner .contenedor-bannerD .link4,
+  .banner .contenedor-bannerD .link6 {
+    margin-right: 4em;
+  }
 }
 
-footer .appMusica {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer .contenedor-musica {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2%;
-}
-
-footer .contenedor-musica .musica {
-  width: 15%;
-}
-
-footer .rSocial {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer .contenedor-rSocial {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2%;
-}
-
-footer .contenedor-rSocial .rSocial {
-  width: 15%;
+@media screen and (min-width: 768px) {
+  .banner .contenedor-bannerC {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 /*# sourceMappingURL=main.css.map */

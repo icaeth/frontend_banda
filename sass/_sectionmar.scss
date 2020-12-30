@@ -1,18 +1,85 @@
-header {
+.banner {
+  background-color: $clr-yellow;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    background-color: $clr-yellow;
-    height: 30vh;
+  a {
+    text-decoration: none;
+    background-color: $clr-black;
+    color: $clr-yellow;
+    padding: 0.5em;
+    margin-bottom: 0.25em;
+    transition: all 0.3s ease;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: 1em;
+      background-color: $clr-yellow;
+      color: $clr-black;
+      text-align: center;
+    }
 
+    &:hover {
+      background-color: $clr-yellow;
+      color: $clr-black;
+      box-shadow: 0 0 0 2px $clr-black;
 
+      @media screen and (min-width: 768px) {
+        background-color: $clr-black;
+        color: $clr-yellow;
+      }
+    }
+  }
+  .logo-imagen {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+  }
 
+  .contenedor-bannerI {
+    display: flex;
+    flex-direction: column;
 
-}
+    @media screen and (min-width: 768px) {
+      width: 250px;
+      .link2 {
+        margin-right: auto;
+        width: auto;
+      }
+      order: 1;
+      .link1,
+      .link3 {
+        margin-left: 4em;
+      }
+    }
+  }
 
+  .contenedor-bannerD {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      width: 250px;
+      .link5 {
+        margin-left: auto;
+      }
+      text-align: right;
+      order: 3;
+      .link4,
+      .link6 {
+        margin-right: 4em;
+      }
+    }
+  }
 
-footer {
-
-    background-color: lightblue;
-    height: 30vh;
-
+  .contenedor-bannerC {
+    @media screen and (min-width: 768px) {
+      order: 2;
+    }
+  }
 }
