@@ -1,0 +1,152 @@
+.ser {
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    padding: 1em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &.prox-events {
+    background-color: $clr-yellow;
+    border: 1px solid $clr-black;
+
+    .event {
+      padding: 1.5em;
+      width: 200px;
+      background-color: $clr-yellow;
+      color: $clr-black;
+      border: 5px solid $clr-black;
+      margin-bottom: 1em;
+      margin-right: 1em;
+      flex-shrink: 0;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        box-shadow: inset 0 0 0 5px $clr-black;
+        transition: all 0.3s ease;
+      }
+
+      .date {
+        margin-top: 0.5em;
+      }
+      .event-name {
+        font-size: 1.5em;
+        margin: 0.25em 0;
+      }
+      .location {
+        margin-bottom: 2.5em;
+      }
+      .button-tickets {
+        background-color: $clr-black;
+        color: $clr-yellow;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 0.5em 2em;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: $clr-yellow;
+          color: $clr-black;
+          box-shadow: inset 0 0 0 5px $clr-black;
+        }
+      }
+    }
+  }
+
+  &.merch {
+    background-color: $clr-black;
+    color: $clr-yellow;
+
+    .merch-item {
+      width: 200px;
+      height: auto;
+      background-color: $clr-yellow;
+      margin-bottom: 1em;
+      margin-right: 1em;
+      flex-shrink: 0;
+      flex-grow: 1;
+      overflow: hidden;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: all 0.5s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &.contact {
+    background-color: $clr-yellow;
+
+    .row {
+      display: block;
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+    input {
+      padding: 1em;
+      background-color: $clr-yellow;
+      color: $clr-black;
+      margin-bottom: 1em;
+      border: 1px solid $clr-black;
+      transition: all 0.3s ease;
+      &:focus {
+        box-shadow: inset 0 0 0 3px $clr-black;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 1em;
+      }
+    }
+
+    button {
+      background-color: $clr-black;
+      color: $clr-yellow;
+      padding: 1em;
+      border: 0;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: inset 0 0 0 5px $clr-black;
+        background-color: $clr-yellow;
+        color: $clr-black;
+      }
+    }
+    input,
+    button {
+      display: block;
+      width: 100%;
+    }
+  }
+}
