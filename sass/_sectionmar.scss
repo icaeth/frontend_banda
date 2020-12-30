@@ -1,8 +1,15 @@
+.porquesi {
+  background-color: $clr-yellow;
+}
+
 .banner {
   background-color: $clr-yellow;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 1em;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -34,6 +41,7 @@
       }
     }
   }
+
   .logo-imagen {
     display: block;
     width: 200px;
@@ -48,11 +56,14 @@
 
     @media screen and (min-width: 768px) {
       width: 250px;
+
       .link2 {
         margin-right: auto;
         width: auto;
       }
+
       order: 1;
+
       .link1,
       .link3 {
         margin-left: 4em;
@@ -63,13 +74,17 @@
   .contenedor-bannerD {
     display: flex;
     flex-direction: column;
+
     @media screen and (min-width: 768px) {
       width: 250px;
+
       .link5 {
         margin-left: auto;
       }
+
       text-align: right;
       order: 3;
+
       .link4,
       .link6 {
         margin-right: 4em;
@@ -83,6 +98,7 @@
     }
   }
 }
+
 footer {
   background-color: $clr-yellow;
 
