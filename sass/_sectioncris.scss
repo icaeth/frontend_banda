@@ -57,6 +57,7 @@
 
 
 .cris2 {
+    min-height: 70vh;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: $clr-yellow;
@@ -91,16 +92,22 @@
     }
 
     img {
-        max-width: 300px;
+        max-width: 200px;
     }
 
     .discografia {
+
+        margin: 0 auto;
+        max-width: 1200px;
         display: flex;
         gap: 2rem;
         flex-wrap: wrap;
         justify-content: center;
 
         .disco {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             flex: 0 0 calc(16.66% - 20px);
         }
 

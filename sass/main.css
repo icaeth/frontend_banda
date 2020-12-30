@@ -408,6 +408,7 @@ footer {
 }
 
 .cris2 {
+  min-height: 70vh;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #f6e200;
@@ -443,10 +444,12 @@ footer {
 }
 
 .cris2 img {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .cris2 .discografia {
+  margin: 0 auto;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,6 +462,16 @@ footer {
 }
 
 .cris2 .discografia .disco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(16.66% - 20px);
           flex: 0 0 calc(16.66% - 20px);
