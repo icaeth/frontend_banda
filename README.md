@@ -12,17 +12,17 @@ Nota: Todas las secciones comparten Header y Footer, por lo que se agruparán co
 Header 
 - Marcelo 
 - Nivel de avance:
-Disponible para Merge 
+- [ ] Disponible para Merge 
 
 Footer 
 - Marcelo 
 - Nivel de avance:
-Disponible para Merge 
+- [ ] Disponible para Merge 
 
 Home 
 - Varios 
 - Nivel de avance:
-Disponible para Merge
+- [ ] Disponible para Merge
 
 Home/Videos 
 - Cristian 
@@ -32,22 +32,32 @@ Home/Videos
 Home/Próximos Conciertos 
 - Sergio 
 - Nivel de avance: 
-Disponible para Merge
+- [ ] Disponible para Merge
 
-Home/Merchadising - Miranda - Nivel de avance:
-Disponible para Merge
+Home/Merchadising 
+- Miranda 
+- Nivel de avance:
+- [ ] Disponible para Merge
 
-Home/Contacto - Sergio - Nivel de avance:
-Disponible para Merge
+Home/Contacto 
+- Sergio 
+- Nivel de avance:
+- [ ] Disponible para Merge
 
-Galería - Carlos - Nivel de avance:
-Disponible para Merge 
+Galería 
+- Carlos 
+- Nivel de avance:
+- [ ] Disponible para Merge 
 
-Tienda - Miranda - Nivel de avance:
-Disponible para Merge 
+Tienda 
+- Miranda 
+- Nivel de avance:
+- [ ] Disponible para Merge 
 
-Próximos Conciertos - Sergio - Nivel de avance:
-Disponible para Merge 
+Próximos Conciertos 
+- Sergio 
+- Nivel de avance:
+- [ ] Disponible para Merge 
 
 Biografía 
 - Cristian 
