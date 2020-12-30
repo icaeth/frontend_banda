@@ -43,4 +43,4 @@ Biografía - Cristian - Nivel de avance: 100%
 Disponible para Merge [x]
 
 Discografía - Cristian - Nivel de avance: 100%
-Disponible para Merge [x]
+- [x] Disponible para Merge 
