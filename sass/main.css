@@ -341,8 +341,130 @@ template {
   display: none;
 }
 
+.breadcrumb {
+  background-color: #000000;
+}
+
+.breadcrumb a,
+.breadcrumb a:link,
+.breadcrumb a:visited {
+  text-decoration: none;
+  color: #f6e200;
+}
+
+.gallery {
+  background-color: #000000;
+  color: #f6e200;
+  margin: 0;
+  padding: 2rem;
+}
+
+.gallery .flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 99%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .flexcontainer .gcard {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 0.5rem;
+}
+
+.gallery .flexcontainer .gcard img {
+  height: auto;
+  width: 99%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f6e200;
+}
+
+.breadcrumb {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f6e200;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery .flexcontainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .gallery .flexcontainer .gcard {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 48%;
+  }
+  .gallery .flexcontainer .gcard img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gallery .flexcontainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .gallery .flexcontainer .gcard {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 30%;
+  }
+  .gallery .flexcontainer .gcard img {
+    height: auto;
+    width: 100%;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .gallery .flexcontainer .gcard img:hover {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 100%;
+    z-index: -1;
+  }
+}
+
+.porquesi {
+  background-color: #f6e200;
+}
+
 .banner {
   background-color: #f6e200;
+  max-width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +841,11 @@ footer .container .titulo {
 
 .ser h2 {
   text-align: center;
-  margin-bottom: 2em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  /* color: $clr-yellow; */
 }
 
 .ser .row, .ser .events {
