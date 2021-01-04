@@ -52,7 +52,7 @@ Galería
 Tienda 
 - Miranda 
 - Nivel de avance:
-- [ ] Disponible para Merge 
+- :heavy_check_mark: Disponible para Merge 
 
 Próximos Conciertos 
 - Sergio 
