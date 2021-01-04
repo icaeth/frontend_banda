@@ -1,0 +1,125 @@
+* {
+    font-family: Lato;
+}
+
+.tienda {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: $clr_black;
+
+    h1 {
+        font-weight: bold;
+        font-variant: small-caps;
+        color: $clr_yellow;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .destacados {
+        background-color: $clr_yellow;
+        
+        h2 {
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align: center;
+        }
+        .slider {
+            width: 90vw;
+            height: auto;
+            display: flex;
+            overflow-x: auto;
+            justify-self: center;
+            scroll-snap-type: x mandatory;
+            justify-content: center;
+        }
+
+        .foto>div {
+            width: 300px;
+            flex-shrink: 0;
+            height: 100%;
+            scroll-snap-align: start;
+            scroll-behavior: smooth;
+        }
+    }
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "aside productos";
+    background-color: $clr_black;
+    aside {
+        background-color: $clr_black;
+        color: $clr_yellow;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ".";
+        grid-area: aside;
+        ul{
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 200%;
+        }
+    }
+
+    .galeriaproductos {
+        
+        background-color: $clr_black;
+        color: $clr_yellow;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 250px;
+        flex-flow: row wrap;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: $clr_black;
+            
+             li {
+                list-style-type: none;
+                width: 240px;
+                padding: 10px;
+                text-align: center;
+                
+            }
+
+            img {
+                height: 200px;
+            }
+
+            .nombreproducto {
+                font-weight: bold;
+            }
+
+            button {
+                border: none;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                font-variant: small-caps;
+                background-color: $clr_yellow;
+                color: $clr_black;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: $clr_black;
+                color: $clr_yellow;
+
+            }
+        }
+    }
+}
