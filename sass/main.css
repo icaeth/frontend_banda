@@ -461,6 +461,20 @@ h1 {
   background-color: #f6e200;
 }
 
+.link1,
+.link2,
+.link3,
+.link4,
+.link5,
+.link6 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #f6e200;
+  /* line-height: 0; */
+}
+
 .banner {
   background-color: #f6e200;
   max-width: 1200px;
@@ -481,9 +495,9 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -540,7 +554,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .banner .contenedor-bannerI {
-    width: 250px;
+    width: 350px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -567,7 +581,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .banner .contenedor-bannerD {
-    width: 250px;
+    width: 350px;
     text-align: right;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -592,6 +606,7 @@ h1 {
 
 footer {
   background-color: #f6e200;
+  font-family: 'Lato', sans-serif;
 }
 
 footer img {
