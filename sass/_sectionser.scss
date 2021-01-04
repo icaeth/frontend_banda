@@ -1,0 +1,225 @@
+.ser {
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding: 1em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  //modificado el h2 para darle el mismo texto al sitio
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    /* color: $clr-yellow; */
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .events {
+    @extend .row;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &.prox-events {
+    background-color: $clr-yellow;
+
+    .row {
+      flex-wrap: wrap;
+    }
+
+    .event {
+      padding: 1.5em;
+      width: 250px;
+      background-color: $clr-yellow;
+      color: $clr-black;
+      border: 5px solid $clr-black;
+      margin-bottom: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      flex-shrink: 0;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+
+      &:hover {
+        box-shadow: inset 0 0 0 5px $clr-black;
+        transition: all 0.3s ease;
+      }
+
+      .date {
+        margin-top: 0.5em;
+      }
+
+      .event-name {
+        font-size: 1.5em;
+        margin: 0.25em 0;
+      }
+
+      .location {
+        margin-bottom: 2.5em;
+      }
+
+      .button-tickets {
+        background-color: $clr-black;
+        color: $clr-yellow;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 0.5em 2em;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $clr-yellow;
+          color: $clr-black;
+          box-shadow: inset 0 0 0 5px $clr-black;
+        }
+      }
+    }
+
+    .show-events {
+      box-sizing: border-box;
+      border: 0;
+      background-color: $clr-black;
+      color: $clr-yellow;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 0.5em 2em;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      margin: 0 0.5rem;
+      width: calc(100% - 1rem);
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $clr-yellow;
+        color: $clr-black;
+        box-shadow: inset 0 0 0 5px $clr-black;
+      }
+
+      &:focus {
+        display: none;
+
+        &~.events {
+          display: flex;
+        }
+
+        &~.hide-events {
+          display: block;
+        }
+      }
+    }
+
+    .hide-events {
+      @extend .show-events;
+      display: none;
+    }
+  }
+
+  &.merch {
+    background-color: $clr-black;
+    color: $clr-yellow;
+
+    .row {
+      flex-wrap: wrap;
+    }
+
+    .merch-item {
+      width: 250px;
+      height: auto;
+      background-color: $clr-yellow;
+      margin-bottom: 1em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+      flex-shrink: 0;
+      flex-grow: 1;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: all 0.5s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &.contact {
+    background-color: $clr-yellow;
+
+    .row {
+      display: block;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    input {
+      padding: 1em;
+      background-color: $clr-yellow;
+      color: $clr-black;
+      margin-bottom: 1em;
+      border: 1px solid $clr-black;
+      transition: all 0.3s ease;
+
+      &:focus {
+        box-shadow: inset 0 0 0 3px $clr-black;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 1em;
+      }
+    }
+
+    button {
+      background-color: $clr-black;
+      color: $clr-yellow;
+      padding: 1em;
+      border: 0;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: inset 0 0 0 5px $clr-black;
+        background-color: $clr-yellow;
+        color: $clr-black;
+      }
+    }
+
+    input,
+    button {
+      display: block;
+      width: 100%;
+    }
+  }
+}
