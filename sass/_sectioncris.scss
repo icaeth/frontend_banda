@@ -12,6 +12,19 @@
             font-weight: 700;
             color: $clr-yellow;
         }
+
+        .slider {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .foto {
+            width: 300px;
+            flex-shrink: 0;
+            height: 100%;
+        }
     }
 
 

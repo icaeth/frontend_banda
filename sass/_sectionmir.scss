@@ -1,125 +1,113 @@
-* {
-    font-family: Lato;
-}
+* {}
 
 .tienda {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     background-color: $clr_black;
+    font-family: 'Lato', sans-serif;
 
-    h1 {
-        font-weight: bold;
-        font-variant: small-caps;
-        color: $clr_yellow;
+}
+
+.destacados {
+    font-family: 'Lato', sans-serif;
+    background: $clr-yellow;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h2 {
         text-align: center;
-        padding: 20px;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $clr_black;
     }
 
-    .destacados {
-        background-color: $clr_yellow;
-        
-        h2 {
-            font-weight: bold;
-            font-variant: small-caps;
-            text-align: center;
-        }
-        .slider {
-            width: 90vw;
-            height: auto;
-            display: flex;
-            overflow-x: auto;
-            justify-self: center;
-            scroll-snap-type: x mandatory;
-            justify-content: center;
-        }
+    .container {
+        display: grid;
+        place-content: center;
+        gap: 1ch;
+    }
 
-        .foto>div {
-            width: 300px;
-            flex-shrink: 0;
-            height: 100%;
-            scroll-snap-align: start;
-            scroll-behavior: smooth;
+    .slider {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .foto {
+        width: 300px;
+        flex-shrink: 0;
+        height: 100%;
+        scroll-snap-align: start;
+    }
+
+    @media (min-width: 900px) {
+        .slider {
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
     }
 }
 
 .productos {
+    padding-top: 2rem;
+    background: $clr_black;
+    color: $clr-yellow;
     display: grid;
-    grid-template-columns: 0.5fr 2fr;
-    grid-template-rows: 1fr;
-    gap: 10px 10px;
-    grid-template-areas:
-      "aside productos";
-    background-color: $clr_black;
-    aside {
+    justify-items: center;
+
+    li {
+        padding-top: 1rem;
+        list-style-type: none;
+        font-size: 1.5rem;
+        font-family: 'Lato', sans-serif;
+    }
+
+    button {
+        border: none;
+        margin: 0.5em;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-variant: small-caps;
+        background-color: $clr_yellow;
+        color: $clr_black;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    button:hover {
         background-color: $clr_black;
         color: $clr_yellow;
+
+    }
+
+    .galeriaproductos>ul>li {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            ".";
-        grid-area: aside;
-        ul{
-            list-style: none;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 200%;
+        justify-items: center;
+
+        p {
+            margin: 0.5em;
         }
     }
 
-    .galeriaproductos {
-        
-        background-color: $clr_black;
-        color: $clr_yellow;
+    @media (min-width: 768px) {
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 250px;
-        flex-flow: row wrap;
+        grid-template-columns: 300px 1fr;
 
-        ul {
+        .galeriaproductos ul {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            background-color: $clr_black;
-            
-             li {
-                list-style-type: none;
-                width: 240px;
-                padding: 10px;
-                text-align: center;
-                
-            }
+            width: 60vw;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-            img {
-                height: 200px;
-            }
-
-            .nombreproducto {
-                font-weight: bold;
-            }
-
-            button {
-                border: none;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 14px;
-                font-variant: small-caps;
-                background-color: $clr_yellow;
-                color: $clr_black;
-                transition-duration: 0.4s;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background-color: $clr_black;
-                color: $clr_yellow;
-
-            }
         }
     }
+
 }
