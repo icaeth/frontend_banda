@@ -672,6 +672,18 @@ footer .container .titulo {
   color: #f6e200;
 }
 
+.cris .title::before {
+  content: 'hola';
+  color: red;
+  font-size: 30px;
+}
+
+.cris .title ::after {
+  content: 'chao';
+  color: red;
+  font-size: 30px;
+}
+
 .cris .title .slider {
   width: 300px;
   height: 300px;
