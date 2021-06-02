@@ -13,18 +13,7 @@
             color: $clr-yellow;
         }
 
-        &::before {
-            content: 'hola';
-            color: red;
-            font-size: 30px;
-        }
-
-        ::after {
-            content: 'chao';
-            color: red;
-            font-size: 30px;
-        }
-
+       
         .slider {
             width: 300px;
             height: 300px;
